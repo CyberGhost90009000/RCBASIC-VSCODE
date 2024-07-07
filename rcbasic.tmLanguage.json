@@ -1,0 +1,16 @@
+{
+    "fileTypes": ["bas"],
+    "name": "RCBasic",
+    "patterns": [{"include": "#statements"}],
+    "repository": {
+        "statements": {
+            "patterns": [
+                {
+                    "match": "\\b(PRINT|IF|THEN|ELSE|END IF|FOR|TO|NEXT|WHILE|WEND|FUNCTION|END FUNCTION)\\b",
+                    "name": "keyword.control.rcbasic"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.rcbasic"
+}

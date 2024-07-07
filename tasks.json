@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "C:/path/to/rcbasic_build.exe",
+            "args": ["${file}"],
+            "group": {"kind": "build", "isDefault": true},
+            "problemMatcher": []
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "C:/path/to/rcbasic.exe",
+            "args": ["${fileDirname}/${fileBasenameNoExtension}.cbc"],
+            "group": {"kind": "test", "isDefault": true},
+            "problemMatcher": []
+        }
+    ]
+}
